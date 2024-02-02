@@ -1,11 +1,20 @@
 [
     {
         "id": "1",
-        "countryname": "Dinamarca",
-        "population": 5792202,
+        "pais": "Dinamarca",
+        "populacao": 5792202,
         "idh": "0,948",
         "pib": "398,3 bilhões USD",
         "capital": "Copenhague",
-        "flag": "https://flagicons.lipis.dev/flags/4x3/dk.svg"
+        "bandeira": "https://flagicons.lipis.dev/flags/4x3/dk.svg"
+    },
+    {
+        "id": "2",
+        "pais": "Brasil",
+        "populacao": 203080756,
+        "idh": "0,754",
+        "pib": "1,609 trilhões USD",
+        "capital": "Brasilia",
+        "bandeira": "https://flagicons.lipis.dev/flags/4x3/br.svg"
     }
 ]
