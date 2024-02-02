@@ -1,0 +1,62 @@
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header input{
+    width: 50%;
+    height: 40px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.countryimg{
+    width: 250px;
+    margin-top: 20px;
+}
+
+
+
+.countryprogress{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #fff linear-gradient(to right, transparent 50%,  #43f94a 0);
+    
+}
+
+.countrypopgraph .countryprogress::before{
+    content: " ";
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to right, transparent 50%,  #43f94a 0);
+    transform: rotate(calc((55 - 50) * 0.01turn));
+}
+
+
+.countryprogress::after{
+    content: "";
+    position: absolute;
+    inset: 15px;
+    border-radius: 50%;
+    background: #f2f2f2;
+}
+
