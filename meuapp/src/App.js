@@ -26,6 +26,7 @@ function App() {
       <div className="header">
         <input type="text" placeholder="Escreva uma nação" onChange={(e) => setCountry(e.target.value)}></input>
       </div>
+      <div className="main-area">
         <div className="main">
           <div className="countryimg">
             {dados.map((item, index) =>{
@@ -56,6 +57,7 @@ function App() {
             })}
           </div>
         </div>
+      </div>
     </div>
   );
 }
