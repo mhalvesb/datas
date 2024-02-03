@@ -5,7 +5,9 @@ import './App.css';
 import "./main.css";
 function App() {
   const [dados, setDados] = useState([]);
-  const [country, setCountry] = useState("Dinamarca");
+  const [country, setCountry] = useState("Brasil");
+  const totalPop = 7888888888;
+  const [pop, setPop] = useState(0);
 
   useEffect(()=>{
       const fetchData = async ()=>{
@@ -13,7 +15,11 @@ function App() {
         setDados(response.data);
       }
       fetchData();
-  }, [])
+  }, []);
+
+  function Percent(value, total){
+      
+  }
 
   return (
     <div className="App">
@@ -34,13 +40,17 @@ function App() {
           {dados.map((item, index)=>{
               return(
                 <div key={index}>
+                  
                 <p>{country == item.pais ? item.pais : ""}</p>
-                <div className="countrypopgraph">
-                  <div className="countryprogress"><p>{country == item.pais ? item.populacao : ""}</p>
+                {country == item.pais ? `População: ${item.populacao}` : ""}
+                {country == item.pais ? <div className="countrypopgraph">
+                  <div className="countryprogress" style={{"--i": `${((item.populacao / totalPop) * 100).toFixed(2)}`}}>
+                      <p>Representa {((item.populacao / totalPop) * 100).toFixed(2)}% da população mundial</p>
                   </div>
-                </div>
-                <p>{country == item.pais ? item.pib : ""}</p>
-                <p>{country == item.pais ? item.idh : ""}</p>
+                </div> : ""}
+                
+                <p>{country == item.pais ? `PIB: ${item.pib}` : ""}</p>
+                <p>{country == item.pais ? `IDH: ${item.idh}` : ""}</p>
               </div>
               )
             })}
