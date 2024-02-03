@@ -2,9 +2,9 @@
     {
         "id": "1",
         "pais": "Dinamarca",
-        "populacao": 5792202,
+        "populacaonumber": 5792202,
         "populacaotext": "57 milhões",
-        "idh": "0,948",
+        "idh": "0.948",
         "pibnumber": 386724,
         "pibtext": "398,3 bilhões USD",
         "capital": "Copenhague",
@@ -15,7 +15,7 @@
         "pais": "Brasil",
         "populacaonumber": 203080756,
         "populacaotext": "203 milhões",
-        "idh": "0,754",
+        "idh": "0.754",
         "pibnumber": 1894708,
         "pibtext": "1,609 trilhões USD",
         "capital": "Brasilia",
@@ -26,8 +26,9 @@
         "pais": "India",
         "populacaonumber": 1429921746,
         "populacaotext": "1,4 bilhões",
-        "idh": "0,633",
-        "pib:": "3,176 trilhões USD",
+        "idh": "0.633",
+        "pibnumber": 0,
+        "pibtext:": "3,176 trilhões USD",
         "capital": "Nova Déli",
         "bandeira": "https://flagicons.lipis.dev/flags/4x3/in.svg"
     }

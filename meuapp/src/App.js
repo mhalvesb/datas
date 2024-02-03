@@ -11,7 +11,6 @@ function App() {
   const totalPib = 101560901;
   const [pib, setPib] = useState(0);
   const [pop, setPop] = useState(0);
-
   useEffect(()=>{
       const fetchData = async ()=>{
         const response = await axios.get("http://localhost:8080/");
@@ -20,9 +19,7 @@ function App() {
       fetchData();
   }, []);
 
-  function Percent(value, total){
-      
-  }
+ 
 
   return (
     <div className="App">
@@ -44,8 +41,9 @@ function App() {
           {dados.map((item, index)=>{
               return(
                 <div key={index}>
-                  
+
                 <p>{country.toUpperCase() == item.pais.toUpperCase() ? item.pais : ""}</p>
+                <p>{country.toUpperCase() == item.pais.toUpperCase() ? item.capital : ""}</p>
                 
                 {country.toUpperCase() == item.pais.toUpperCase() ? <div className="countrypopgraph">
                   <div className="graph1">
@@ -64,7 +62,17 @@ function App() {
                   
                 </div> : ""}
                 
-                <p>{country.toUpperCase() == item.pais.toUpperCase() ? `IDH: ${item.idh}` : ""}</p>
+                {country.toUpperCase() == item.pais.toUpperCase()? <div className="barcontainer">
+                  <div className="skill-box">
+                    <span className="title">IDH:</span>
+                  </div>
+                  <div className="skill-bar">
+                      <span className="skill-per" style={{"--idh": `${(Number(item.idh) * 100)}%`, "--clr": `${Number(item.idh) * 100 > 95 ? "#003c00" : Number(item.idh) * 100 > 75 ? "#007f00" : Number(item.idh) * 100 > 50 ? "#ffa83c" : Number(item.idh) * 100 > 25 ? "#ff5b00" : "#a70000"}`}}>
+                          
+                          <span className="tooltip">{country.toUpperCase() == item.pais.toUpperCase() ? item.idh : ""}</span>
+                      </span>
+                  </div>
+                </div> : ""}
               </div>
               )
             })}
