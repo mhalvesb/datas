@@ -16,5 +16,14 @@
         "pib": "1,609 trilhões USD",
         "capital": "Brasilia",
         "bandeira": "https://flagicons.lipis.dev/flags/4x3/br.svg"
+    },
+    {
+        "id": "3",
+        "pais": "India",
+        "populacao": 1429921746	,
+        "idh": "0,633",
+        "pib:": "3,176 trilhões USD",
+        "capital": "Nova Déli",
+        "bandeira": "https://flagicons.lipis.dev/flags/4x3/in.svg"
     }
 ]

@@ -31,7 +31,7 @@ function App() {
             {dados.map((item, index) =>{
               return(
                 <div key={index}>
-                  {country == item.pais ? <img src={item.bandeira} alt="bandeira"></img> : ""}
+                  {country.toUpperCase() == item.pais.toUpperCase() ? <img src={item.bandeira} alt="bandeira"></img> : ""}
                 </div>
               )
             })}
@@ -41,16 +41,16 @@ function App() {
               return(
                 <div key={index}>
                   
-                <p>{country == item.pais ? item.pais : ""}</p>
-                {country == item.pais ? `População: ${item.populacao}` : ""}
-                {country == item.pais ? <div className="countrypopgraph">
+                <p>{country.toUpperCase() == item.pais.toUpperCase() ? item.pais : ""}</p>
+                {country.toUpperCase() == item.pais.toUpperCase() ? `População: ${item.populacao}` : ""}
+                {country.toUpperCase() == item.pais.toUpperCase() ? <div className="countrypopgraph">
                   <div className="countryprogress" style={{"--i": `${((item.populacao / totalPop) * 100).toFixed(2)}`}}>
                       <p>Representa {((item.populacao / totalPop) * 100).toFixed(2)}% da população mundial</p>
                   </div>
                 </div> : ""}
                 
-                <p>{country == item.pais ? `PIB: ${item.pib}` : ""}</p>
-                <p>{country == item.pais ? `IDH: ${item.idh}` : ""}</p>
+                <p>{country.toUpperCase() == item.pais.toUpperCase() ? `PIB: ${item.pib}` : ""}</p>
+                <p>{country.toUpperCase() == item.pais.toUpperCase() ? `IDH: ${item.idh}` : ""}</p>
               </div>
               )
             })}
