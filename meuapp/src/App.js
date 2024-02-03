@@ -4,9 +4,12 @@ import axios from "axios";
 import './App.css';
 import "./main.css";
 function App() {
+
   const [dados, setDados] = useState([]);
   const [country, setCountry] = useState("Brasil");
   const totalPop = 7888888888;
+  const totalPib = 101560901;
+  const [pib, setPib] = useState(0);
   const [pop, setPop] = useState(0);
 
   useEffect(()=>{
@@ -43,14 +46,24 @@ function App() {
                 <div key={index}>
                   
                 <p>{country.toUpperCase() == item.pais.toUpperCase() ? item.pais : ""}</p>
-                {country.toUpperCase() == item.pais.toUpperCase() ? `População: ${item.populacao}` : ""}
+                
                 {country.toUpperCase() == item.pais.toUpperCase() ? <div className="countrypopgraph">
-                  <div className="countryprogress" style={{"--i": `${((item.populacao / totalPop) * 100).toFixed(2)}`}}>
-                      <p>Representa {((item.populacao / totalPop) * 100).toFixed(2)}% da população mundial</p>
+                  <div className="graph1">
+                      {country.toUpperCase() == item.pais.toUpperCase() ? `População: ${item.populacaotext}` : ""}
+                      <div className="countryprogress" style={{"--i": `${((item.populacaonumber / totalPop) * 100).toFixed(2)}`}}>
+                        <p>Representa {((item.populacaonumber / totalPop) * 100).toFixed(2)}% da população mundial</p>
+                      </div>
+                    </div>
+                  
+                  <div className="graph2">
+                    {country.toUpperCase() == item.pais.toUpperCase() ? `PIB: ${item.pibtext}` : ""}
+                    <div className="countryprogress" style={{"--i": `${((item.pibnumber / totalPib) * 100).toFixed(2)}`}}>
+                      <p>Representa {((item.pibnumber / totalPib) * 100).toFixed(2)}% do PIB mundial</p>
+                    </div>
                   </div>
+                  
                 </div> : ""}
                 
-                <p>{country.toUpperCase() == item.pais.toUpperCase() ? `PIB: ${item.pib}` : ""}</p>
                 <p>{country.toUpperCase() == item.pais.toUpperCase() ? `IDH: ${item.idh}` : ""}</p>
               </div>
               )
