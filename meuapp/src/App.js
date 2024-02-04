@@ -29,8 +29,9 @@ function App() {
     <div className="App">
       <div className="header">
         <div className="divinput">
-          <p>Escreva uma nação</p>
-          <input type="text" placeholder="Escreva uma nação" onChange={(e) => setCountry(e.target.value)}></input>
+          
+          <input type="text" onChange={(e) => setCountry(e.target.value)}></input>
+          <label>Escreva um país</label>
         </div>
         
       </div>

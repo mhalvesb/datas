@@ -15,7 +15,6 @@ body{
 .header{
     height: 80px;
     width: 100%;
-    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,16 +22,6 @@ body{
     
 }
 
-.header input{
-    width: 50%;
-    height: 40px;
-    outline: none;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    padding-left: 20px;
-    font-size: 18px;
-    color: #000;
-}
 
 .main{
     display: flex;
@@ -218,15 +207,34 @@ body{
 
 .divinput{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     width: 50%;
 }
 
 .divinput input{
-    margin: 0 auto;
+    width: 100%;
+    padding: 5px;
+    color: rgb(150,150,150);
+    border: 0;
+    border-bottom: 2px solid rgb(200,200,200);
+    outline: 0;
+    background: transparent;
 }
 
-.divinput p{
+.divinput label{
     position: absolute;
     color: #000;
-    margin-left: 20px;
+    left: 0;
+    transition: 0.5s;
+    padding: 0;
+    margin: 0;
+    cursor: text;
 }
+
+.divinput input:focus, .divinput input:valid{
+    border-bottom: 2px solid cornflowerblue;
+}
+
+
