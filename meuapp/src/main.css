@@ -114,7 +114,11 @@ body{
 
 .countryprogress::before{
     background: #355E3B;
-    transform: rotate(calc((var(--i) - 0) * 0.01turn));
+    
+    animation-name: turn;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 
 
@@ -259,6 +263,16 @@ body{
 
     100%{
         width: var(--idh);
+    }
+}
+
+@keyframes turn{
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(calc((var(--i) - 0) * 0.01turn));
     }
 }
 
