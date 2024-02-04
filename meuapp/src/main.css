@@ -164,10 +164,14 @@ body{
 .skill-bar .skill-per{
     position: relative;
     display: block;
-    width: var(--idh);
+    width: 0%;
     height: 100%;
     border-radius: 8px 0px 0px 8px;
     background: var(--clr);
+    animation-name: graph;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 }
 
 .tooltip{
@@ -244,6 +248,18 @@ body{
 .divinput input:focus ~ label, .divinput input:valid ~ label{
     transform: translateY(-22px);
     font-size: 12px;
+}
+
+
+
+@keyframes graph{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: var(--idh);
+    }
 }
 
 
