@@ -116,7 +116,7 @@ body{
     background: #355E3B;
     
     animation-name: turn;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
@@ -173,7 +173,7 @@ body{
     border-radius: 8px 0px 0px 8px;
     background: var(--clr);
     animation-name: graph;
-    animation-duration: 1s;
+    animation-duration: 2.5s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
@@ -237,7 +237,7 @@ body{
     background: #333;
     user-select: none;
     left: 0;
-    transition: 0.5s;
+    transition: 0.2s;
     padding: 0;
     margin: 0;
     margin-left: 5px;
@@ -252,6 +252,43 @@ body{
 .divinput input:focus ~ label, .divinput input:valid ~ label{
     transform: translateY(-22px);
     font-size: 12px;
+}
+
+.search{
+    position: absolute;
+    background-color: #444;
+    border: 1px solid rgb(150,150,150);
+    width: 50%;
+    left: 0;
+    top: 104%;
+}
+
+.search ul{
+    height: 100%;
+    margin: 0px;
+    padding: 0px 7px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.search li{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(200,200,200);
+    text-align: start;
+    border: 2px solid rgb(150,150,150);
+    width: 100px;
+    padding: 5px 10px;
+    margin: 5px 0px;
+}
+
+.search li img{
+    width: 20px;
+    margin-right: 5px;
 }
 
 

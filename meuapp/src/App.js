@@ -29,11 +29,21 @@ function App() {
     <div className="App">
       <div className="header">
         <div className="divinput">
-        
           <input type="text" name="texts" id="texts" required onChange={(e) => setCountry(e.target.value)}></input>
           <label htmlFor="texts" id="texts">Escreva o nome de um país</label>
+          <div className="search">
+            <ul>
+              <li><img src="https://flagicons.lipis.dev/flags/4x3/br.svg" alt="flag"></img>Brasil</li>
+              <li>Babilonia</li>
+              <li>Item</li>
+              <li>Item</li>
+              <li>Item</li>
+              <li>Item</li>
+              <li>Item</li>
+
+            </ul>
+          </div>
         </div>
-        
       </div>
       <div className="main-area">
         <div className="main">
