@@ -257,7 +257,6 @@ body{
 .search{
     position: absolute;
     background-color: #444;
-    border: 1px solid rgb(150,150,150);
     width: 50%;
     left: 0;
     top: 104%;
@@ -270,7 +269,7 @@ body{
     width: 100%;
     margin: 0px;
     padding: 0px 7px;
-    display: flex;
+    display: none;
     align-items: stretch;
     justify-content: stretch;
     flex-direction: column;
@@ -289,6 +288,11 @@ body{
     padding: 0;
     margin: 5px 0px;
 }
+
+.divinput input:focus ~ .search ul{
+    display: flex;
+}
+
 
 .search li img{
     width: 20px;

@@ -45,7 +45,7 @@ function App() {
               {country !== "" ? filterCountry.map((item, index)=>{
                 return(
                   <div key={index}>
-                    <li onClick={(e) => setCountry(item.pais)}> <img src={item.bandeira} alt="bandeira"></img>  {item.pais}</li>
+                    <li onMouseDown={(e) => setCountry(item.pais)}> <img src={item.bandeira} alt="bandeira"></img>  {item.pais}</li>
                   </div>
                 )
               }) : ""}
