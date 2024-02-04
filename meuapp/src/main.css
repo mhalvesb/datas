@@ -214,3 +214,19 @@ body{
 .moreinfos p{
     margin: 5px 0px;
 }
+
+
+.divinput{
+    display: flex;
+    width: 50%;
+}
+
+.divinput input{
+    margin: 0 auto;
+}
+
+.divinput p{
+    position: absolute;
+    color: #000;
+    margin-left: 20px;
+}

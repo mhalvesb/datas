@@ -28,7 +28,11 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <input type="text" placeholder="Escreva uma nação" onChange={(e) => setCountry(e.target.value)}></input>
+        <div className="divinput">
+          <p>Escreva uma nação</p>
+          <input type="text" placeholder="Escreva uma nação" onChange={(e) => setCountry(e.target.value)}></input>
+        </div>
+        
       </div>
       <div className="main-area">
         <div className="main">
