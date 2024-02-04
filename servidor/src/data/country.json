@@ -8,6 +8,7 @@
         "pibnumber": 386724,
         "pibtext": "398,3 bilhões USD",
         "capital": "Copenhague",
+        "lingua": "Dinamarquês",
         "bandeira": "https://flagicons.lipis.dev/flags/4x3/dk.svg"
     },
     {
@@ -34,6 +35,10 @@
         "pibnumber": 0,
         "pibtext:": "3,176 trilhões USD",
         "capital": "Nova Déli",
+        "estados": 28,
+        "moeda": "Rupia indiana (INR)",
+        "telef": "+91",
+        "lingua": "Hindi",
         "bandeira": "https://flagicons.lipis.dev/flags/4x3/in.svg"
     }
 ]
