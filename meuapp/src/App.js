@@ -37,7 +37,7 @@ function App() {
     <div className="App">
       <div className="header">
         <div className="divinput">
-          <input type="text" name="texts" id="texts" required onChange={(e) => setCountry(e.target.value)}></input>
+          <input type="text" name="texts" id="texts" value={country} required onChange={(e) => setCountry(e.target.value)}></input>
           <label htmlFor="texts" id="texts">Escreva o nome de um país</label>
           <div className="search">
             <ul>
@@ -45,7 +45,7 @@ function App() {
               {country !== "" ? filterCountry.map((item, index)=>{
                 return(
                   <div key={index}>
-                    <li> <img src={item.bandeira} alt="bandeira"></img>  {item.pais}</li>
+                    <li onClick={(e) => setCountry(item.pais)}> <img src={item.bandeira} alt="bandeira"></img>  {item.pais}</li>
                   </div>
                 )
               }) : ""}
