@@ -83,6 +83,7 @@ function App() {
                   <p>Estados: {item.estados}</p>
                   <p>Moeda: {item.moeda}</p>
                   <p>Cód. telef. {item.telef}</p>
+                  <p>Língua: {item.lingua}</p>
                 </div> : ""}
               </div>
               )
