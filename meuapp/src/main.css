@@ -261,34 +261,38 @@ body{
     width: 50%;
     left: 0;
     top: 104%;
+    display: flex;
+
 }
 
 .search ul{
     height: 100%;
+    width: 100%;
     margin: 0px;
     padding: 0px 7px;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: stretch;
+    justify-content: stretch;
     flex-direction: column;
     list-style-type: none;
 }
 
 .search li{
+    width: 99%;
+    height: 30px;
     display: flex;
     align-items: center;
     cursor: pointer;
     background-color: rgb(200,200,200);
     text-align: start;
     border: 2px solid rgb(150,150,150);
-    width: 100px;
-    padding: 5px 10px;
+    padding: 0;
     margin: 5px 0px;
 }
 
 .search li img{
     width: 20px;
-    margin-right: 5px;
+    margin: 0px 5px;
 }
 
 

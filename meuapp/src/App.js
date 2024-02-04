@@ -10,20 +10,28 @@ import marker from "./src/assets/icons/marker.png";
 function App() {
 
   const [dados, setDados] = useState([]);
-  const [country, setCountry] = useState("Brasil");
+  const [country, setCountry] = useState("");
+  const filterCountry = dados.filter(data => data.pais.toUpperCase().startsWith(country.toUpperCase()));
+  const [li, setLi] = useState([]);
   const totalPop = 7888888888;
   const totalPib = 101560901;
   const [pib, setPib] = useState(0);
   const [pop, setPop] = useState(0);
+
   useEffect(()=>{
       const fetchData = async ()=>{
         const response = await axios.get("http://localhost:8080/");
         setDados(response.data);
       }
       fetchData();
+      addItem();
   }, []);
 
- 
+  const addItem = () =>{
+    const updateItem = [...li];
+    updateItem.push(dados);
+    setLi(updateItem);
+  } 
 
   return (
     <div className="App">
@@ -33,14 +41,14 @@ function App() {
           <label htmlFor="texts" id="texts">Escreva o nome de um país</label>
           <div className="search">
             <ul>
-              <li><img src="https://flagicons.lipis.dev/flags/4x3/br.svg" alt="flag"></img>Brasil</li>
-              <li>Babilonia</li>
-              <li>Item</li>
-              <li>Item</li>
-              <li>Item</li>
-              <li>Item</li>
-              <li>Item</li>
-
+             
+              {country !== "" ? filterCountry.map((item, index)=>{
+                return(
+                  <div key={index}>
+                    <li> <img src={item.bandeira} alt="bandeira"></img>  {item.pais}</li>
+                  </div>
+                )
+              }) : ""}
             </ul>
           </div>
         </div>
