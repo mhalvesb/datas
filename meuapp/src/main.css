@@ -1,20 +1,25 @@
 *{
     font-family: 'Libre Franklin', sans-serif;
+    color: #fff;
 }
 
 body{
-    width: 100%;
     height: 100vh;
     background-color: #333;
+    margin:0;
+    padding: 0;
 }
+
+
 
 .header{
     height: 80px;
     width: 100%;
-    background-color: aliceblue;
+    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .header input{
@@ -22,9 +27,10 @@ body{
     height: 40px;
     outline: none;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #fff;
     padding-left: 20px;
     font-size: 18px;
+    color: #000;
 }
 
 .main{
@@ -32,54 +38,64 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #f5f5f5;
+    background-color: #333;
     width: 500px;
     margin-top: 50px;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 10px 1px rgba(255, 255,255,0.45);
 }
-.main-area{
+
+.main-area
+{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.countryimg{
+.countryimg
+{
     width: 250px;
     margin-top: 20px;
 }
 
-.countryinfo{
+.countryinfo
+{
     width: 100%;
     display:flex;
     align-items: center;
     justify-content: center;
 }
 
-.countrypopgraph{
+.countrypopgraph
+{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.countryprogress{
+.countryprogress
+{
     position: relative;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     background: #355E3B  linear-gradient(to right, transparent 50%, #90EE90 0);
     display: flex;
+    margin: 10px 0px;
 }
 
-.countryprogress p{
+.countryprogress p
+{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
     margin: 0px;
+    color: #000;
+    font-weight: 100;
 }
 
 .countryxl{
@@ -122,7 +138,6 @@ body{
     justify-content: flex-start;
     max-width: 500px;
     width: 400px;
-    background: #fff;
     margin: 0px 15px;
     padding: 25px 20px 20px 20px;
     border-radius: 7px;
@@ -137,7 +152,7 @@ body{
 .skill-box .title{
     display: block;
     font-size: 14px;
-    color: #333;
+    color: #fff;
 }
 
 .skill-bar{
@@ -160,7 +175,7 @@ body{
 
 .tooltip{
     position: absolute;
-    right: -18px;
+    right: -24px;
     top: -26px;
     background: var(--clr);
     color: #fff;
@@ -178,5 +193,10 @@ body{
     width: 10px;
     z-index: -1;
     background-color: var(--clr);
-    transform: translateX(90%) rotate(45deg);
+    transform: translateX(120%) rotate(45deg);
+}
+
+.moreinfos{
+    display: flex;
+    padding: 0px 35px;
 }

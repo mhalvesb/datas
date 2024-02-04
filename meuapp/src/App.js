@@ -74,9 +74,14 @@ function App() {
                   <div className="skill-bar">
                       <span className="skill-per" style={{"--idh": `${(Number(item.idh) * 100)}%`, "--clr": `${Number(item.idh) * 100 > 95 ? "#003c00" : Number(item.idh) * 100 > 75 ? "#007f00" : Number(item.idh) * 100 > 50 ? "#ffa83c" : Number(item.idh) * 100 > 25 ? "#ff5b00" : "#a70000"}`}}>
                           
-                          <span className="tooltip">{country.toUpperCase() == item.pais.toUpperCase() ? item.idh : ""}</span>
+                          <span className="tooltip">{country.toUpperCase() == item.pais.toUpperCase() ? `${item.idh}` : ""}</span>
                       </span>
                   </div>
+                </div> : ""}
+                {country.toUpperCase() == item.pais.toUpperCase() ? 
+                <div className="moreinfos">
+                  <p>Estados: {item.estados}</p>
+                  <p>Moeda: {item.moeda}</p>
                 </div> : ""}
               </div>
               )
