@@ -215,6 +215,7 @@ body{
 
 .divinput input{
     width: 100%;
+    font-size: 25px;
     padding: 5px;
     color: rgb(150,150,150);
     border: 2px solid rgb(200,200,200); 
@@ -241,7 +242,7 @@ body{
 }
 
 .divinput input:focus ~ label, .divinput input:valid ~ label{
-    transform: translateY(-16px);
+    transform: translateY(-22px);
     font-size: 12px;
 }
 

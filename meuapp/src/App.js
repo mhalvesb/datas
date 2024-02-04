@@ -31,7 +31,7 @@ function App() {
         <div className="divinput">
         
           <input type="text" name="texts" id="texts" required onChange={(e) => setCountry(e.target.value)}></input>
-          <label htmlFor="texts" id="texts">Escreva um país</label>
+          <label htmlFor="texts" id="texts">Escreva o nome de um país</label>
         </div>
         
       </div>
