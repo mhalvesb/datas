@@ -3,6 +3,10 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 import './App.css';
 import "./main.css";
+
+import flag from "./src/assets/icons/flag.png";
+import marker from "./src/assets/icons/marker.png";
+
 function App() {
 
   const [dados, setDados] = useState([]);
@@ -32,6 +36,7 @@ function App() {
             {dados.map((item, index) =>{
               return(
                 <div key={index}>
+                  <p className="countryxl">{country.toUpperCase() == item.pais.toUpperCase() ? `${item.pais}` : ""}</p>
                   {country.toUpperCase() == item.pais.toUpperCase() ? <img src={item.bandeira} alt="bandeira"></img> : ""}
                 </div>
               )
@@ -42,8 +47,8 @@ function App() {
               return(
                 <div key={index}>
 
-                <p>{country.toUpperCase() == item.pais.toUpperCase() ? item.pais : ""}</p>
-                <p>{country.toUpperCase() == item.pais.toUpperCase() ? item.capital : ""}</p>
+                
+                <p>{country.toUpperCase() == item.pais.toUpperCase() ? `Capital: ${item.capital}` : ""}</p>
                 
                 {country.toUpperCase() == item.pais.toUpperCase() ? <div className="countrypopgraph">
                   <div className="graph1">
