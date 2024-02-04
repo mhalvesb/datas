@@ -217,24 +217,32 @@ body{
     width: 100%;
     padding: 5px;
     color: rgb(150,150,150);
-    border: 0;
-    border-bottom: 2px solid rgb(200,200,200);
+    border: 2px solid rgb(200,200,200); 
     outline: 0;
     background: transparent;
+    z-index: 10;
 }
 
 .divinput label{
     position: absolute;
     color: #000;
+    color: rgb(150,150,150);
+    background-color: #333;
     left: 0;
     transition: 0.5s;
     padding: 0;
     margin: 0;
+    margin-left: 4px;
     cursor: text;
 }
 
 .divinput input:focus, .divinput input:valid{
     border-bottom: 2px solid cornflowerblue;
+}
+
+.divinput input:focus ~ label, .divinput input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
 }
 
 

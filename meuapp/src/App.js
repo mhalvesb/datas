@@ -30,7 +30,7 @@ function App() {
       <div className="header">
         <div className="divinput">
           
-          <input type="text" onChange={(e) => setCountry(e.target.value)}></input>
+          <input type="text" required onChange={(e) => setCountry(e.target.value)}></input>
           <label>Escreva um país</label>
         </div>
         
