@@ -29,9 +29,9 @@ function App() {
     <div className="App">
       <div className="header">
         <div className="divinput">
-          
-          <input type="text" required onChange={(e) => setCountry(e.target.value)}></input>
-          <label>Escreva um país</label>
+        
+          <input type="text" name="texts" id="texts" required onChange={(e) => setCountry(e.target.value)}></input>
+          <label htmlFor="texts" id="texts">Escreva um país</label>
         </div>
         
       </div>
