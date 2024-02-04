@@ -48,7 +48,7 @@ function App() {
                 <div key={index}>
 
                 
-                <p>{country.toUpperCase() == item.pais.toUpperCase() ? `Capital: ${item.capital}` : ""}</p>
+                <p className="countryl">{country.toUpperCase() == item.pais.toUpperCase() ? `${item.capital}` : ""}</p>
                 
                 {country.toUpperCase() == item.pais.toUpperCase() ? <div className="countrypopgraph">
                   <div className="graph1">
@@ -82,6 +82,7 @@ function App() {
                 <div className="moreinfos">
                   <p>Estados: {item.estados}</p>
                   <p>Moeda: {item.moeda}</p>
+                  <p>Cód. telef. {item.telef}</p>
                 </div> : ""}
               </div>
               )
