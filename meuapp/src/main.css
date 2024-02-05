@@ -173,7 +173,7 @@ body{
     border-radius: 8px 0px 0px 8px;
     background: var(--clr);
     animation-name: graph;
-    animation-duration: 2.5s;
+    animation-duration: 1.5s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
