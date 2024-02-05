@@ -18,7 +18,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid #fff;
     
 }
 
@@ -299,6 +298,13 @@ body{
     margin: 0px 5px;
 }
 
+.graph1, .graph2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 @keyframes graph{
@@ -322,3 +328,47 @@ body{
 }
 
 
+
+
+
+@media(max-width: 1440px){
+    .header{
+        height: 50px;
+    }
+    .main{
+        padding: 10px;
+        margin-top: 5px;
+    }
+    .countryimg{
+        margin-top: 0;
+    }
+    .countryimg img{
+        width: 200px;
+    }
+    .countryprogress{
+        width: 120px;
+        height: 120px;
+    }
+    .countryprogress p {
+        font-size: 12px;
+    }
+    .divinput input{
+        font-size: 16px;
+    }
+    .divinput label{
+        padding: 1px 5px;
+    }
+    .divinput input:valid ~ label, .divinput input:focus ~ label {
+        transform: translateY(-16px);
+    }
+    .countryxl{
+        font-size: 30px;
+    }
+    .countryl{
+        font-size: 20px;
+        margin: 5px 0px 15px 0px;
+    }
+    .barcontainer{
+        padding: 0;
+    }
+}
