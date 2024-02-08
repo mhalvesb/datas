@@ -415,4 +415,12 @@ body{
         justify-content: flex-start;
         padding: 0px;
     }
+    .search{
+        width: 100%;
+    }
+
+    .search li{
+        height: 100%;
+        min-height: 30px;
+    }
 }
