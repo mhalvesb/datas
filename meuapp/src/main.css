@@ -388,4 +388,31 @@ body{
     .countryimg img{
         width: 100px;
     }
+    .countryimg img{
+        font-size: 25px;
+    }
+    .countryprogress{
+        width: 90px;
+        height: 90px;
+    }
+
+    .graph1, .graph2{
+        font-size: 10px;
+    }
+    .countryprogress{
+        justify-content: center;
+    }
+
+    .countryprogress p{
+        font-size: 8px;
+    }
+    .barcontainer{
+        width: 250px;
+        margin: 10px 0px;
+    }
+    .moreinfos{
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0px;
+    }
 }
