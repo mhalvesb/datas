@@ -375,6 +375,11 @@ body{
 
 
 @media(max-width: 600px){
+    .body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .main{
         width: 300px;
     }
