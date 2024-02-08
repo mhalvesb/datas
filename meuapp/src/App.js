@@ -20,7 +20,7 @@ function App() {
 
   useEffect(()=>{
       const fetchData = async ()=>{
-        const response = await axios.get("http://localhost:8080/");
+        const response = await axios.get("https://datas-server.vercel.app/");
         setDados(response.data);
       }
       fetchData();
