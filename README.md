@@ -21,4 +21,8 @@
 </ul>
 
 <h2>Algumas imagens</h2>
-<img src="./src/src/assets/github/img1.jpg">
+<img src="./meuapp/src/src/assets/github/img1.jpg">
+<hr>
+<img src="./meuapp/src/src/assets/github/img2.jpg">
+<hr>
+<img src="./meuapp/src/src/assets/github/img3.jpg">
