@@ -14,10 +14,18 @@
 
 
 <h2>Tecnologias utilizadas</h2>
+<h3>FRONT-END</h3>
 <ul>
   <li>HTML5 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="13px"/></li>
   <li>CSS3 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="13px"/></li>
   <li>REACT <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="13px"/></li>
+</ul>
+
+
+<h3>BACK-END</h3>
+<ul>
+  <li>NODE JS</li>
+  <li>DADOS EM JSON</li>
 </ul>
 
 <h2>Algumas imagens</h2>
