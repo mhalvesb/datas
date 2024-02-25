@@ -24,7 +24,7 @@
 
 <h3>BACK-END</h3>
 <ul>
-  <li>NODE JS</li>
+  <li>NODE JS <img src="https://www.svgrepo.com/show/452075/node-js.svg"></li>
   <li>DADOS EM JSON</li>
 </ul>
 
