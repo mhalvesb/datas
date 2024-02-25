@@ -25,7 +25,7 @@
 <h3>BACK-END</h3>
 <ul>
   <li>NODE JS <img src="https://www.svgrepo.com/show/452075/node-js.svg" width="13px"></li>
-  <li>DADOS EM JSON <img src="https://www.svgrepo.com/show/14508/json-file.svg" width="13px"</li>
+  <li>DADOS EM JSON <img src="https://wwwsvgrepo.com/show/154781/json-file.svg" width="13px"</li>
 </ul>
 
 <h2>Algumas imagens</h2>
